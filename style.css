@@ -1,0 +1,223 @@
+
+/* -----
+SVG Icons - svgicons.sparkk.fr
+----- */
+
+.svg-icon {
+  width: 1em;
+  height: 1em;
+  font-size: 30px;
+  transition: 0.5s;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #4691f6;
+}
+
+.svg-icon circle {
+  stroke: #4691f6;
+  stroke-width: 1;
+}
+
+.number-sliding{
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items:center;
+  padding: 30px 0px;
+  font-size: 18px;
+}
+.number-sliding ul{
+  display: inline;
+  list-style: none;
+}
+.number-sliding h2{
+  font-family: monospace;
+  font-size: 20px;
+  padding-right: 7px;
+  font-weight: bolder;
+}
+.number-sliding ul li{
+  display: inline-block;
+  padding-right: 12px;
+  font-size: 20px;
+}
+#left-text-num{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ .number-sliding ul li > img{
+      width: 40px;
+    height: 33px;
+    padding-right: 10px;
+    position: relative;
+    top: 5px;
+  
+}
+#personalLoan-form{
+  position: absolute;
+  top: 10%;
+  left: 30%;
+  width: 600px;
+  height: auto;
+  border: 1px solid black;
+  font-family: monospace;
+  padding: 10px 15px;
+}
+
+#personalLoan-form h2{
+  font-size: 25px;
+  font-family: sans-serif;
+  letter-spacing: 1.2px;
+  padding-bottom: 20px;
+  width: 380px;
+  border-bottom: 2.5px solid #3589f1;
+}
+#personalLoan-form input{
+  position: relative;
+  width: 60%;
+  border: none;
+  font-size: 18px;
+  margin:50px 0px ;
+  padding: 14px 24px;
+  border-radius: 14px;
+    box-shadow: 1px 2px 2px 1px #bdc3c7, 1px 0px 2px #bdc3c7;
+  transition: 0.3s;
+  outline: none;
+}
+
+#personalLoan-form input:focus{
+  transition: 0.3s;
+    box-shadow: 10px 10px 20px 1px #bdc3c7;
+}
+
+#personalLoan-form  label{
+  font-size: 18px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+}
+
+#personalLoan-form  button{
+  padding: 10px 30px;
+  border: none;
+  outline: none;
+  background:#3589f1 ;
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  border-radius: 14px;
+}
+/* mobile responsive  */
+
+@media (max-width: 930px) {
+  
+.number-sliding{
+  display: block;
+  text-align: center;
+}
+  #left-text-num{
+  display: block;
+  }
+.number-sliding ul{
+  text-align: center;
+}
+.svg-icon {
+  transform: rotate(90deg);
+  transition: 0.5s;
+}
+
+  
+.number-sliding ul li > img{
+      width: 40px;
+    height: 33px;
+    padding-right: 10px;
+    position: relative;
+    top: 5px;
+  
+}
+}
+
+
+
+/* Home Loan Starts Here */
+
+.homeloan-info{
+  width: 100vw;
+  height: auto;
+  margin: 50px 0px;
+}
+
+.homeloan-info .information-homeloan .home-container{
+  display: flex;
+  width: 100%;
+  height: auto;
+  justify-content: space-around;
+  align-items: center;
+    flex-direction: column;
+}
+
+
+.homeloan-info .information-homeloan .home-container .home-loan-image,
+.homeloan-info .information-homeloan .home-container .home-loancontent{
+  text-align: center;
+  width: 100%;
+}
+
+.homeloan-info .information-homeloan .home-container .home-loancontent{
+  text-align: center;
+  margin-top: 40px;
+}
+.homeloan-info .information-homeloan .home-container .home-loancontent h2{
+  font-size: 30px;
+}
+.homeloan-info .information-homeloan .home-container .home-loan-image img{
+  width: 650px;
+  margin-left: 20px;
+  border-radius: 10px;
+  box-shadow: -1px 6px 16px 1px rgba(0,0,0,0.32);
+  margin: 40px;
+}
+.homeloan-info .information-homeloan .home-container .home-loancontent #home-icon{
+  width: 50px;
+  margin-right: 20px;
+}
+
+.homeloan-info .information-homeloan .home-container .home-loancontent p{
+  padding: 20px;
+  width: 80%;
+  text-align: justify;
+}
+/* Home Loan ends Here */
+@media screen  and (max-width:1100px){
+
+  .homeloan-info .information-homeloan .home-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+  
+}
+
+.homeloan-info .information-homeloan h1{
+  text-align: center;
+  padding: 20px 0px;
+}
+
+.homeloan-info .information-homeloan p{
+  line-height: 30px;
+  padding: 20px;
+  text-align: justify;
+}
+
+/* Loan Against Property   Sarts */
+#Lap-info {
+  background-image: url('./assets/img/');
+} 
+
+/*Loan Against Property  Ends  */

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EMI Calculator</title>
+  <link rel="stylesheet" href="emical.css" />
+</head>
+
+<body>
+  <div class="Main-container">
+    <div class="top">
+      <h1>Loan Calculator</h1>
+      <form action="#">
+        <div class="group">
+          <h2>Amount</h2>
+          <input type="text" placeholder="Enter Loam Amount" class="loan-amout" value="500000" />
+        </div>
+        <div class="group">
+          <h2>Interest Rate</h2>
+          <input type="text" placeholder="Enter Interest Rate" class="interest-rate" value="9" />
+        </div>
+        <div class="group">
+          <h2>Tenure ( in months)</h2>
+          <input type="text" placeholder="Enter Tenure in months" class="loan-tenure" value="120" />
+        </div>
+      </form>
+    </div>
+
+    <div class="result">
+      <div class="left">
+        <div class="total-Emi">
+          <h3>Loan EMI</h3>
+          <h2 class="value">123</h2>
+        </div>
+        <div class="total-interest">
+          <h3>Tota Interest Payable</h3>
+          <h2 class="value">12323</h2>
+        </div>
+        <div class="total-amount">
+          <h3>Total Amount</h3>
+          <h2 class="value">123</h2>
+        </div>
+        <button class="calculteBtn" id="clcbtnbottom">Calculate</button>
+      </div>
+
+      <div class="right-chart">
+        <canvas id="myChart"></canvas>
+
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1/dist/chart.min.js"></script>
+  <script src="emical.js"></script>
+</body>
+
+</html>

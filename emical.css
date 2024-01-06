@@ -1,0 +1,105 @@
+.Main-container .Main-container,
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.Main-container {
+  width: 700px;
+  margin: 24px auto;
+  background-color: #fff;
+  box-shadow: 0 12px 50px -11px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.Main-container .top {
+  background-color: #14213d;
+  color: white;
+  padding: 30px;
+}
+.Main-container .top form {
+  display: flex;
+  justify-content: space-between;
+  gap: 14px;
+}
+.Main-container .top form h2 {
+  font-size: 18px;
+}
+.Main-container .top form input {
+  background: none;
+  outline: none;
+  border: none;
+  color: white;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.4);
+  font-size: 15px;
+}
+.Main-container .result {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Main-container .result .left {
+  width: 100%;
+  padding: 8px 32px;
+}
+.Main-container .result .left h3 {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 7px;
+}
+.Main-container .result .left .value {
+  font-size: 30px;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(20, 30, 61, 0.2);
+}
+.Main-container .result .left .value::before {
+  content: "₹";
+  font-weight: 300;
+  font-size: 22px;
+  margin-right: 6px;
+}
+
+.calculteBtn {
+  border: none;
+  outline: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: #ee5253;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.right-chart {
+  width: 50%;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 650px) {
+  .Main-container {
+    width: 90%;
+    max-width: 600px;
+  }
+  .Main-container .top {
+    text-align: center;
+    height: 520px;
+  }
+  .Main-container .top form {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .Main-container .top form input {
+    padding: 10px 30px;
+  }
+
+  .Main-container .result {
+    flex-direction: column;
+    text-align: center;
+  }
+  #clcbtnbottom {
+    position: absolute;
+    top: 41%;
+    left: 31%;
+    padding: 16px 67px;
+  }
+}
